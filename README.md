@@ -70,7 +70,6 @@ create a .env file and add :
 ```env
 DATABASE_URL=<mongo_db_connection_string>
 URL="http://localhost:3000"
-
 NEXTAUTH_SECRET=<random_string>
 ```
 

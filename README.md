@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Layout Lab
 
-First, run the development server:
+This a school project for [@bdernier](https://github.com/bdernier)'s FullStack course.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Authors
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [@LeoBessin](https://www.github.com/LeoBessin)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Stack
 
-## Learn More
+**Client:** NextJs, Prisma, TailwindCSS
 
-To learn more about Next.js, take a look at the following resources:
+**Server:** Node, MongoDb
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Color Reference
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| Accent Glow Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| 100 | ![#f24e1e](https://via.placeholder.com/10/f24e1e?text=+) #f24e1e |
+| 200 | ![#ff7262](https://via.placeholder.com/10/ff7262?text=+) #ff7262 |
+| 300 | ![#a259ff](https://via.placeholder.com/10/a259ff?text=+) #a259ff |
+| 400 | ![#1abcfe](https://via.placeholder.com/10/1abcfe?text=+) #1abcfe |
+| 500 | ![#0acf83](https://via.placeholder.com/10/0acf83?text=+) #0acf83 |
 
-## Deploy on Vercel
+| Accent Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| 100 | ![#666666](https://via.placeholder.com/10/666666?text=+) #666666 |
+| 200 | ![#f7f7f7](https://via.placeholder.com/10/f7f7f7?text=+) #f7f7f7 |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Background Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| 100 | ![#1a1a1a](https://via.placeholder.com/10/1a1a1a?text=+) #1a1a1a |
+| 200 | ![#292929](https://via.placeholder.com/10/292929?text=+) #292929 |
+| 300 | ![#404040](https://via.placeholder.com/10/404040?text=+) #404040 |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| Primary Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| 100 | ![#333333](https://via.placeholder.com/10/333333?text=+) #333333 |
+| 200 | ![#5c5c5c](https://via.placeholder.com/10/5c5c5c?text=+) #5c5c5c |
+| 300 | ![#b9b9b9](https://via.placeholder.com/10/b9b9b9?text=+) #b9b9b9 |
+
+| Text Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| 100 | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
+| 200 | ![#e0e0e0](https://via.placeholder.com/10/e0e0e0?text=+) #e0e0e0 |
+
+
+## Features
+
+- Create/edit account
+- Create/read/like/save posts
+- Create/read comments
+
+
+![Logo](https://raw.githubusercontent.com/LeoBessin/LayoutLab/main/public/images/big-logo.png)
+
+
+## 🚀 About Me
+I'm a full stack (student) developer...
+
+
+## Demo
+
+![](https://github.com/LeoBessin/LayoutLab/blob/main/public/images/demo/demo-1.gif)
+

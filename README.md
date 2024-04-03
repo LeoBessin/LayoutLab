@@ -14,6 +14,9 @@ This a school project for [@bdernier](https://github.com/bdernier)'s FullStack c
 
 **Server:** Node, MongoDb
 
+
+![Logo](https://raw.githubusercontent.com/LeoBessin/LayoutLab/main/public/images/big-logo.png)
+
 ## Color Reference
 
 | Accent Glow Color             | Hex                                                                |
@@ -54,14 +57,28 @@ This a school project for [@bdernier](https://github.com/bdernier)'s FullStack c
 - Create/read comments
 
 
-![Logo](https://raw.githubusercontent.com/LeoBessin/LayoutLab/main/public/images/big-logo.png)
+## Installation
 
+Install LayoutLab with npm
 
-## 🚀 About Me
-I'm a full stack (student) developer...
+```bash
+  npm install
+```
 
+create a .env file and add :
+
+```env
+DATABASE_URL=<mongo_db_connection_string>
+URL="http://localhost:3000"
+
+NEXTAUTH_SECRET=<random_string>
+```
 
 ## Demo
 
 ![](https://github.com/LeoBessin/LayoutLab/blob/main/public/images/demo/demo-1.gif)
+
+
+## 🚀 About Me
+I'm a full stack (student) developer...
 

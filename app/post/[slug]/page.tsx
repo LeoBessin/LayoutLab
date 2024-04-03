@@ -8,6 +8,7 @@ import fetcher from "@/src/api/fetch";
 import Comment from "@/src/components/Comment";
 import FormPostComment from "@/src/components/FormPostComment";
 import {useSession} from "next-auth/react";
+import {Edit, Trash2} from "react-feather";
 
 
 const Page = ({params}: {
@@ -41,8 +42,6 @@ const Page = ({params}: {
                 body: formData,
             })
 
-            // Handle response if necessary
-            const data = await response.json()
             setIsSended(false)
         } catch (error) {
             // Handle error if necessary
@@ -64,6 +63,8 @@ const Page = ({params}: {
 
     const [post, user, comments] = data.data;
 
+    const isAdmin = session?.user ? session.user.name === user.name : false;
+
     const img_src = (user?.pictureUli) ? user.pictureUli : "/images/profile_picture/default.jpg";
     const post_picture = (post?.pictureUli) ? post.pictureUli : "/images/post_picture/default.jpg";
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -78,17 +79,33 @@ const Page = ({params}: {
             <section className="flex flex-col bg-bg-200/60 w-2/3 rounded-2xl gap-4 shadow-2xl shadow-black">
                 <Image className="h-96 object-cover rounded-t-2xl" width="1280" height="100" src={post_picture}
                        alt={post?.title + ""}/>
-                <Link href={"/user/" + user?.name}>
-                    <div
-                        className="hover:scale-105 transition-all flex items-center gap-2 mx-16 hover:bg-bg-300/20 hover:cursor-pointer py-2 px-4 w-fit rounded-2xl">
-                        <Image className="rounded-full" width="40" height="40" src={img_src}
-                               alt={user?.name + " profile picture"}/>
-                        <div>
-                            <p className="font-semibold text-md">{user?.name}</p>
-                            <p className="font-semibold text-sm text-primary-200">Posted on {date_text}</p>
+                <div className="flex">
+                    <Link href={"/user/" + user?.name}>
+                        <div
+                            className="hover:scale-105 transition-all flex items-center gap-2 mx-16 hover:bg-bg-300/20 hover:cursor-pointer py-2 px-4 w-fit rounded-2xl">
+                            <Image className="rounded-full" width="40" height="40" src={img_src}
+                                   alt={user?.name + " profile picture"}/>
+                            <div>
+                                <p className="font-semibold text-md">{user?.name}</p>
+                                <p className="font-semibold text-sm text-primary-200">Posted on {date_text}</p>
+                            </div>
                         </div>
-                    </div>
-                </Link>
+                    </Link>
+                    {isAdmin ?
+                        <div className="ml-auto mr-8 flex items-center gap-4">
+                            <Link href={`/user/${post.slug}/settings`}
+                                  className="hover:scale-105 transition-all  rounded-lg border-accent-glow-500 border-2 flex items-center p-2 px-4 gap-2 text-accent-glow-500 font-semibold hover:underline hover:bg-gradient-to-b from-accent-glow-500 to-accent-glow-500/80 hover:text-text-100 shadow-lg hover:shadow-accent-glow-500/60">
+                                <Edit width='20'/>
+                                <p>Edit Post</p>
+                            </Link>
+                            <button
+                                  className="hover:scale-105 transition-all  rounded-lg border-accent-glow-100 border-2 flex items-center p-2 gap-2 text-accent-glow-100 font-semibold hover:underline hover:bg-gradient-to-b from-accent-glow-100 to-accent-glow-100/80 hover:text-text-100 shadow-lg hover:shadow-accent-glow-100/60">
+                                <Trash2 width='20'/>
+                            </button>
+
+                        </div>
+                        : <></>}
+                </div>
                 <h1 className="font-black text-6xl mx-16">{post?.title}</h1>
                 <div className="flex gap-2 mx-16">
                     {

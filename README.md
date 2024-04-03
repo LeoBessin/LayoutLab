@@ -1,7 +1,7 @@
 
 # Layout Lab
 
-This a school project for [@bdernier](https://github.com/bdernier)'s FullStack course.
+This is a school project for [@bdernier](https://github.com/bdernier)'s FullStack course.
 
 ## Authors
 

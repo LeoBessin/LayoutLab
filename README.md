@@ -63,6 +63,8 @@ Install LayoutLab with npm
 
 ```bash
   npm install
+  npx prisma generate
+  npx prisma db push
 ```
 
 create a .env file and add :

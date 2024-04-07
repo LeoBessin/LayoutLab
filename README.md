@@ -54,7 +54,7 @@ The exercise was to create a blog site with the topic of our choice, I went to w
 ## Features
 
 - Create/edit account
-- Create/read/like/save posts
+- Create/read/like/save/filter posts
 - Create/read comments
 
 

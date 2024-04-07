@@ -1,7 +1,8 @@
 
 # Layout Lab
 
-This is a school project for [@bdernier](https://github.com/bdernier)'s FullStack course.
+This is a school project for [@bdernier](https://github.com/bdernier)'s FullStack course.\
+The exercise was to create a blog site with the topic of our choice, I went to web design, one of my favorite topics.
 
 ## Authors
 

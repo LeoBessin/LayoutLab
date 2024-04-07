@@ -78,7 +78,25 @@ NEXTAUTH_SECRET=<random_string>
 ## Page design
 
 ### Home
+![](https://github.com/LeoBessin/LayoutLab/blob/main/public/images/demo/home-page.png)
 
+### Sign in
+![](https://github.com/LeoBessin/LayoutLab/blob/main/public/images/demo/sign-in.png)
+
+### Dashboard
+![](https://github.com/LeoBessin/LayoutLab/blob/main/public/images/demo/dashboard.png)
+
+### Create post
+![](https://github.com/LeoBessin/LayoutLab/blob/main/public/images/demo/create-post.png)
+
+### Post detail
+![](https://github.com/LeoBessin/LayoutLab/blob/main/public/images/demo/post-detail.png)
+
+### Comments / Footer
+![](https://github.com/LeoBessin/LayoutLab/blob/main/public/images/demo/comments-footer.png)
+
+### User detail
+![](https://github.com/LeoBessin/LayoutLab/blob/main/public/images/demo/user-detail.png)
 
 
 ## Demo

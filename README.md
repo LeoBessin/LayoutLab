@@ -63,6 +63,8 @@ Install LayoutLab with npm
 
 ```bash
   npm install
+  npx prisma generate
+  npx prisma db push
 ```
 
 create a .env file and add :
@@ -72,6 +74,12 @@ DATABASE_URL=<mongo_db_connection_string>
 URL="http://localhost:3000"
 NEXTAUTH_SECRET=<random_string>
 ```
+
+## Page design
+
+### Home
+
+
 
 ## Demo
 

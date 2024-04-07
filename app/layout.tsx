@@ -4,6 +4,8 @@ import "./globals.css";
 import NavBar from "@/src/components/NavBar/NavBar";
 import Footer from "@/src/components/Footer";
 import Provider from '@/context/Provider';
+import {GitHub} from "react-feather";
+import Link from "next/link";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -33,6 +35,10 @@ export default function RootLayout({
 
             </div>
             {children}
+            <Link target="_blank" href="https://github.com/LeoBessin/LayoutLab" className="transition-all hover:scale-105 fixed border-2 border-white rounded-2xl shadow-white/40 shadow-lg  w-fit p-1 px-2 bottom-12 left-12 bg-bg-100/60 opacity-80 hover:opacity-100 flex items-center gap-1">
+                <GitHub width="15"/>
+                <p className="text-xs">v0.1</p>
+            </Link>
             <Footer/>
             </body>
         </Provider>
